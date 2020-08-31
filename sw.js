@@ -39,11 +39,11 @@ self.__precacheManifest = [
     "url": "framework-1a1efb3f5c798a012f4a.js"
   },
   {
-    "url": "app-5a86c7da8d1a81ac50c0.js"
+    "url": "app-d96f39924790f213957c.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "a8dd275eddc6db4ee384e1f91a0ad346"
+    "revision": "388ad93e441efc99961ef4691c9c1e11"
   },
   {
     "url": "google-fonts/s/reemkufi/v7/2sDcZGJLip7W2J7v7wQzaGW5.woff2",
@@ -62,6 +62,57 @@ self.__precacheManifest = [
   },
   {
     "url": "polyfill-98c1c53b2c5b5eb2390e.js"
+  },
+  {
+    "url": "f0e45107-5dcaedf55b8bf28efe29.js"
+  },
+  {
+    "url": "f7f859cd4bf156c2acc6f46f65ba39cb35d4c0a9-de0826d375bb6da471a5.js"
+  },
+  {
+    "url": "component---node-modules-narative-gatsby-theme-novela-src-templates-article-template-tsx-7791b2df3f03b38d8416.js"
+  },
+  {
+    "url": "page-data/blog/how-to-backup-and-restore-your-pgp-keys-with-gpg/page-data.json",
+    "revision": "08945defff6f4eaf60c6ddaa929dfb36"
+  },
+  {
+    "url": "page-data/sq/d/1143375668.json",
+    "revision": "4e6a8bb58622d0edc7c0b8a00148d9d8"
+  },
+  {
+    "url": "page-data/sq/d/1491088328.json",
+    "revision": "c9dfe0db6af1f9742ea19b58c4e95026"
+  },
+  {
+    "url": "page-data/sq/d/1921650733.json",
+    "revision": "e9a4c6278eab98548abfeae487a36bb7"
+  },
+  {
+    "url": "page-data/sq/d/2068910035.json",
+    "revision": "284393de932161ccb01e83531736713d"
+  },
+  {
+    "url": "page-data/sq/d/2444214635.json",
+    "revision": "c59f24a85fe6b20ec3160d47ca668cae"
+  },
+  {
+    "url": "page-data/app-data.json",
+    "revision": "90994d5dc819fd2edba2b63d0c989b91"
+  },
+  {
+    "url": "5adfd937054d18aa90c3653907d1d43da6549296-4a3a3b2f5bdc7d872089.js"
+  },
+  {
+    "url": "component---node-modules-narative-gatsby-theme-novela-src-templates-articles-template-tsx-9f6a94b60ca18519d1ad.js"
+  },
+  {
+    "url": "page-data/blog/page-data.json",
+    "revision": "863b5a19e7c9cd094f5dcc6aa3e9a2cf"
+  },
+  {
+    "url": "page-data/sq/d/3372861117.json",
+    "revision": "51f1c3fe6ce9247a21535778b1d90109"
   },
   {
     "url": "manifest.webmanifest",
@@ -157,7 +208,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-5a86c7da8d1a81ac50c0.js`))) {
+  if (!resources || !(await caches.match(`/app-d96f39924790f213957c.js`))) {
     return await fetch(event.request)
   }
 
